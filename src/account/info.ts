@@ -1,8 +1,8 @@
-import { Connection, clusterApiUrl, PublicKey, Keypair } from "@solana/web3.js"
+import { Connection, clusterApiUrl, Keypair } from "@solana/web3.js"
 import { getBytes } from "ethers"
 
 const main = async () => {
-    const connection = new Connection(clusterApiUrl("testnet"))
+    const connection = new Connection(clusterApiUrl("devnet"))
 
     const key = getBytes(process.env.PRIVATE_KEY!)
     const keypair = Keypair.fromSecretKey(key)
@@ -10,7 +10,7 @@ const main = async () => {
     const info = await connection.getAccountInfo(
         keypair.publicKey
     )
-    console.log(`account info: ${info}`)
+    console.log(`account info: ${JSON.stringify(info)}`)
 }
 
 main()

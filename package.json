@@ -6,7 +6,8 @@
   "license": "MIT",
   "dependencies": {
     "@solana/web3.js": "^1.78.1",
-    "ethers": "^6.6.7"
+    "ethers": "^6.6.7",
+    "tweetnacl": "^1.0.3"
   },
   "devDependencies": {
     "ts-node": "^10.9.1",
