@@ -1,5 +1,5 @@
 import * as web3 from "@solana/web3.js"
-import { decodeBase58, encodeBase58, getBytes } from "ethers"
+import { encodeBase58, getBytes } from "ethers"
 import * as nacl from "tweetnacl"
 
 const main = async () => {
