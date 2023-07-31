@@ -5,7 +5,8 @@
   "author": "ququzone <xueping.yang@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@solana/web3.js": "^1.78.1"
+    "@solana/web3.js": "^1.78.1",
+    "ethers": "^6.6.7"
   },
   "devDependencies": {
     "ts-node": "^10.9.1",
